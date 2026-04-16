@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JHF Labs — Just Have Fun</title>
+<meta name="description" content="JHF Labs — estudio independente de apps mobile. Just Have Fun." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="nav">
+  <div class="nav__logo">JHF<span>/</span>LABS</div>
+  <nav class="nav__links">
+    <a href="#manifesto">manifesto</a>
+    <a href="#projetos">projetos</a>
+    <a href="#contato">contato</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero__tag">EST. 2025 — INDIE MOBILE STUDIO</div>
+    <h1 class="hero__title">
+      JUST<br/>
+      HAVE<br/>
+      <span class="accent">FUN.</span>
+    </h1>
+    <p class="hero__sub">
+      Apps mobile feitos sem pressa, sem metrica de vaidade,<br/>
+      sem roadmap de investidor. So o que da vontade de construir.
+    </p>
+    <div class="hero__scroll">↓ scroll</div>
+  </section>
+
+  <section id="manifesto" class="manifesto">
+    <div class="manifesto__label">// manifesto</div>
+    <div class="manifesto__grid">
+      <p class="manifesto__big">
+        Software bom <span class="accent">nao precisa</span> ser chato.
+      </p>
+      <div class="manifesto__text">
+        <p>JHF Labs e um estudio independente. A gente faz apps porque gosta de fazer apps — nao pra escalar, nao pra vender, nao pra virar unicornio.</p>
+        <p>Se ficou bom, fica no ar. Se nao ficou, a gente recomeca. Simples assim.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="projects">
+    <div class="projects__label">// projetos</div>
+    <h2 class="projects__title">O que ta no ar.</h2>
+
+    <article class="project">
+      <div class="project__media">
+        <div class="project__screenshots">
+          <img src="assets/cidinha-1.png" alt="Cidinha home screen" />
+          <img src="assets/cidinha-2.png" alt="Cidinha sale screen" />
+          <img src="assets/cidinha-3.png" alt="Cidinha clients screen" />
+        </div>
+      </div>
+      <div class="project__info">
+        <div class="project__num">01</div>
+        <h3 class="project__name">Cidinha</h3>
+        <div class="project__tags">
+          <span>Android</span>
+          <span>iOS</span>
+          <span>Kotlin Multiplatform</span>
+          <span>Offline-first</span>
+        </div>
+        <p class="project__desc">
+          Gestao de vendas pra quem vende sem loja fisica. Controla clientes, vendas parceladas, lembretes via WhatsApp. Funciona 100% offline — sincroniza quando quiser.
+        </p>
+        <p class="project__status"><span class="dot"></span> em producao</p>
+        <div class="project__links">
+          <a href="#" class="btn btn--primary">Baixar</a>
+          <a href="#" class="btn btn--ghost">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project project--reverse">
+      <div class="project__media">
+        <div class="project__screenshots">
+          <img src="assets/takeone-1.svg" alt="Take One screen 1" />
+          <img src="assets/takeone-2.svg" alt="Take One screen 2" />
+          <img src="assets/takeone-3.svg" alt="Take One screen 3" />
+        </div>
+      </div>
+      <div class="project__info">
+        <div class="project__num">02</div>
+        <h3 class="project__name">Take One</h3>
+        <div class="project__tags">
+          <span>Android</span>
+          <span>iOS</span>
+          <span>Kotlin Multiplatform</span>
+        </div>
+        <p class="project__desc">
+          [Descricao do Take One aqui — edite em index.html. Conte em 2-3 linhas o que o app faz, pra quem, e o diferencial.]
+        </p>
+        <p class="project__status"><span class="dot dot--wip"></span> em desenvolvimento</p>
+        <div class="project__links">
+          <a href="#" class="btn btn--primary">Em breve</a>
+          <a href="#" class="btn btn--ghost">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="contact__label">// contato</div>
+    <h2 class="contact__title">
+      Tem ideia?<br/>
+      <span class="accent">Chama.</span>
+    </h2>
+    <div class="contact__links">
+      <a href="mailto:vini.snascimento00@gmail.com">vini.snascimento00@gmail.com</a>
+      <a href="https://github.com/snvinni" target="_blank" rel="noopener">github.com/snvinni</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__left">© <span id="year"></span> JHF LABS</div>
+  <div class="footer__right">JUST HAVE FUN.</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
