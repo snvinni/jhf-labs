@@ -19,7 +19,8 @@ body {
   font-weight: 400;
 }
 
-img { display: block; max-width: 100%; filter: grayscale(100%) contrast(1.05); }
+img { display: block; max-width: 100%; }
+img.bw { filter: grayscale(100%) contrast(1.05); }
 
 ::selection { background: var(--fg); color: var(--bg); }
 
