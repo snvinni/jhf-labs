@@ -17,9 +17,10 @@
 <header class="nav">
   <div class="nav__logo">JHF<span>//</span>LABS</div>
   <nav class="nav__links">
-    <a href="#manifesto">manifesto</a>
-    <a href="#projetos">projetos</a>
-    <a href="#contato">contato</a>
+    <a href="#manifesto" data-i18n="nav_manifesto">manifesto</a>
+    <a href="#projetos" data-i18n="nav_projects">projetos</a>
+    <a href="#contato" data-i18n="nav_contact">contato</a>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
   </nav>
 </header>
 
@@ -28,7 +29,7 @@
   <section class="hero">
     <div class="hero__top">
       <span>EST. 2025</span>
-      <span>INDIE MOBILE STUDIO — BR</span>
+      <span data-i18n="hero_studio">INDIE MOBILE STUDIO — BR</span>
     </div>
 
     <div class="hero__mark">
@@ -38,12 +39,12 @@
 
     <div class="hero__bottom">
       <div class="hero__tagline">
-        Just Have Fun. <em>/ feito com gosto.</em>
+        Just Have Fun. <em data-i18n="hero_tagline">/ feito com gosto.</em>
       </div>
       <div class="hero__meta">
-        <strong>02</strong> projetos<br/>
-        <strong>∞</strong> ideias<br/>
-        <strong>00</strong> pressa
+        <strong>02</strong> <span data-i18n="hero_projects">projetos</span><br/>
+        <strong>∞</strong> <span data-i18n="hero_ideas">ideias</span><br/>
+        <strong>00</strong> <span data-i18n="hero_rush">pressa</span>
       </div>
     </div>
   </section>
@@ -51,20 +52,20 @@
   <section id="manifesto" class="manifesto">
     <span class="section-label">// manifesto — 01</span>
     <div class="manifesto__grid">
-      <p class="manifesto__big">
+      <p class="manifesto__big" data-i18n-html="manifesto_title">
         Software feito com <em>tempo</em>,<br/>
         atencao e <em>gosto</em>.
       </p>
       <div class="manifesto__text">
-        <p>JHF Labs e um estudio independente de apps mobile. A gente faz cada produto com o cuidado que daria pro proprio — pensando em cada tela, cada fluxo, cada detalhe.</p>
-        <p>Menos ruido, mais utilidade. Apps que funcionam bem, sao bonitos de usar e resolvem de verdade o problema de quem abre.</p>
+        <p data-i18n="manifesto_p1">JHF Labs e um estudio independente de apps mobile. A gente faz cada produto com o cuidado que daria pro proprio — pensando em cada tela, cada fluxo, cada detalhe.</p>
+        <p data-i18n="manifesto_p2">Menos ruido, mais utilidade. Apps que funcionam bem, sao bonitos de usar e resolvem de verdade o problema de quem abre.</p>
       </div>
     </div>
   </section>
 
   <section id="projetos" class="projects">
-    <span class="section-label">// projetos — 02</span>
-    <h2 class="projects__title">NO AR<span class="slash">.</span></h2>
+    <span class="section-label">// <span data-i18n="nav_projects">projetos</span> — 02</span>
+    <h2 class="projects__title" data-i18n="projects_title">NO AR<span class="slash">.</span></h2>
 
     <article class="project">
       <div class="project__media">
@@ -76,7 +77,7 @@
         </div>
       </div>
       <div class="project__info">
-        <div class="project__num">PROJETO 01</div>
+        <div class="project__num" data-i18n="project_label">PROJETO 01</div>
         <h3 class="project__name">Cidinha</h3>
         <div class="project__tags">
           <span>Android</span>
@@ -84,13 +85,13 @@
           <span>Kotlin Multiplatform</span>
           <span>Offline-first</span>
         </div>
-        <p class="project__desc">
+        <p class="project__desc" data-i18n="cidinha_desc">
           Controle de vendas pra quem vende sem loja fisica. Clientes, vendas parceladas, analytics e mensagens automaticas pelo WhatsApp. Funciona 100% offline — sincroniza quando quiser. Pra revendedores, brechos e prestadores de servico.
         </p>
-        <p class="project__status"><span class="dot"></span> disponivel na play store</p>
+        <p class="project__status"><span class="dot"></span> <span data-i18n="cidinha_status">disponivel na play store</span></p>
         <div class="project__links">
-          <a href="https://play.google.com/store/apps/details?id=com.cidinha.br" target="_blank" rel="noopener" class="btn btn--primary">Baixar Android</a>
-          <a href="#" class="btn btn--ghost btn--disabled">iOS em breve</a>
+          <a href="https://play.google.com/store/apps/details?id=com.cidinha.br" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="btn_download_android">Baixar Android</a>
+          <a href="#" class="btn btn--ghost btn--disabled" data-i18n="btn_ios_soon">iOS em breve</a>
         </div>
       </div>
     </article>
@@ -105,21 +106,21 @@
         </div>
       </div>
       <div class="project__info">
-        <div class="project__num">PROJETO 02</div>
+        <div class="project__num" data-i18n="project_label_02">PROJETO 02</div>
         <h3 class="project__name">Take One</h3>
         <div class="project__tags">
           <span>Android</span>
           <span>iOS</span>
           <span>Kotlin Multiplatform</span>
-          <span>Jogo</span>
+          <span data-i18n="tag_game">Jogo</span>
           <span>Cinema</span>
         </div>
-        <p class="project__desc">
+        <p class="project__desc" data-i18n="takeone_desc">
           Jogo diario de adivinhar filmes por cenas. Cinco rodadas, imagens reveladas aos poucos — quanto antes acertar, maior a pontuacao. Estetica de cinema retro, temas escuros inspirados em A24, Ghibli e Pulp Fiction. Compartilhe seu resultado estilo Wordle.
         </p>
-        <p class="project__status"><span class="dot dot--wip"></span> em desenvolvimento</p>
+        <p class="project__status"><span class="dot dot--wip"></span> <span data-i18n="takeone_status">em desenvolvimento</span></p>
         <div class="project__links">
-          <a href="#" class="btn btn--ghost btn--disabled">em breve</a>
+          <a href="#" class="btn btn--ghost btn--disabled" data-i18n="btn_coming_soon">em breve</a>
         </div>
       </div>
     </article>
@@ -127,8 +128,8 @@
   </section>
 
   <section id="contato" class="contact">
-    <span class="section-label">// contato — 03</span>
-    <h2 class="contact__title">Tem ideia?<br/>Chama.</h2>
+    <span class="section-label">// <span data-i18n="nav_contact">contato</span> — 03</span>
+    <h2 class="contact__title" data-i18n-html="contact_title">Tem ideia?<br/>Chama.</h2>
     <div class="contact__links">
       <a href="mailto:vini.snascimento00@gmail.com">→ vini.snascimento00@gmail.com</a>
       <a href="https://instagram.com/jhf.labs" target="_blank" rel="noopener">→ @jhf.labs</a>
@@ -143,7 +144,85 @@
 </footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const i18n = {
+  pt: {
+    nav_manifesto: "manifesto",
+    nav_projects: "projetos",
+    nav_contact: "contato",
+    hero_studio: "INDIE MOBILE STUDIO — BR",
+    hero_tagline: "/ feito com gosto.",
+    hero_projects: "projetos",
+    hero_ideas: "ideias",
+    hero_rush: "pressa",
+    manifesto_title: 'Software feito com <em>tempo</em>,<br/>atencao e <em>gosto</em>.',
+    manifesto_p1: "JHF Labs e um estudio independente de apps mobile. A gente faz cada produto com o cuidado que daria pro proprio — pensando em cada tela, cada fluxo, cada detalhe.",
+    manifesto_p2: "Menos ruido, mais utilidade. Apps que funcionam bem, sao bonitos de usar e resolvem de verdade o problema de quem abre.",
+    projects_title: 'NO AR<span class="slash">.</span>',
+    project_label: "PROJETO 01",
+    project_label_02: "PROJETO 02",
+    cidinha_desc: "Controle de vendas pra quem vende sem loja fisica. Clientes, vendas parceladas, analytics e mensagens automaticas pelo WhatsApp. Funciona 100% offline — sincroniza quando quiser. Pra revendedores, brechos e prestadores de servico.",
+    cidinha_status: "disponivel na play store",
+    btn_download_android: "Baixar Android",
+    btn_ios_soon: "iOS em breve",
+    tag_game: "Jogo",
+    takeone_desc: "Jogo diario de adivinhar filmes por cenas. Cinco rodadas, imagens reveladas aos poucos — quanto antes acertar, maior a pontuacao. Estetica de cinema retro, temas escuros inspirados em A24, Ghibli e Pulp Fiction. Compartilhe seu resultado estilo Wordle.",
+    takeone_status: "em desenvolvimento",
+    btn_coming_soon: "em breve",
+    contact_title: "Tem ideia?<br/>Chama.",
+  },
+  en: {
+    nav_manifesto: "manifesto",
+    nav_projects: "projects",
+    nav_contact: "contact",
+    hero_studio: "INDIE MOBILE STUDIO — BR",
+    hero_tagline: "/ made with care.",
+    hero_projects: "projects",
+    hero_ideas: "ideas",
+    hero_rush: "rush",
+    manifesto_title: 'Software made with <em>time</em>,<br/>attention, and <em>taste</em>.',
+    manifesto_p1: "JHF Labs is an independent mobile app studio. We build each product with the care we'd give our own — thinking about every screen, every flow, every detail.",
+    manifesto_p2: "Less noise, more utility. Apps that work well, look good, and actually solve the problem.",
+    projects_title: 'LIVE NOW<span class="slash">.</span>',
+    project_label: "PROJECT 01",
+    project_label_02: "PROJECT 02",
+    cidinha_desc: "Sales management for people who sell without a storefront. Clients, installment tracking, analytics, and automated WhatsApp messages. Works 100% offline — syncs when you want. For resellers, thrift shops, and service providers.",
+    cidinha_status: "available on play store",
+    btn_download_android: "Download Android",
+    btn_ios_soon: "iOS coming soon",
+    tag_game: "Game",
+    takeone_desc: "A daily movie-guessing game from scene images. Five rounds, progressively revealed — the earlier you guess, the higher the score. Retro cinema aesthetic with dark themes inspired by A24, Ghibli, and Pulp Fiction. Share your results Wordle-style.",
+    takeone_status: "in development",
+    btn_coming_soon: "coming soon",
+    contact_title: "Got an idea?<br/>Hit us up.",
+  }
+};
+
+let currentLang = localStorage.getItem('jhf-lang') || 'pt';
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('jhf-lang', lang);
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+  document.getElementById('langToggle').textContent = lang === 'pt' ? 'EN' : 'PT';
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang][key]) el.textContent = i18n[lang][key];
+  });
+
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    if (i18n[lang][key]) el.innerHTML = i18n[lang][key];
+  });
+}
+
+document.getElementById('langToggle').addEventListener('click', () => {
+  setLang(currentLang === 'pt' ? 'en' : 'pt');
+});
+
+if (currentLang !== 'pt') setLang(currentLang);
 </script>
 
 </body>

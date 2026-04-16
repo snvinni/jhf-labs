@@ -61,6 +61,15 @@ body::after {
   transition: color 0.2s;
 }
 .nav__links a:hover { color: var(--fg); }
+.lang-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: transparent; border: 1px solid var(--muted);
+  color: var(--fg); padding: 4px 10px;
+  cursor: pointer; transition: all 0.2s;
+}
+.lang-toggle:hover { border-color: var(--fg); }
 
 /* HERO — JHF gigante, preto e branco, documentary */
 .hero {
